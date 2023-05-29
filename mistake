@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+    <body>
+        <header class="header">
+            <div class="headline">
+                <div class="header_in">
+                    <div class="logo">Basic Words</div>
+                    <div class="bars">bars</div>
+                </div>
+            </div>
+        </header>
+            <div class="main_container">
+              <div class="container_in">
+                <div class="container_t">
+                    <div class="item">
+                        <div class="word">
+                          <div class="exspr_one">
+                              <span class="I">I</span> 
+                              <span class="speak">Speak</span> 
+                              <span class="english">English</span>
+                          </div>
+    
+                          <span> - </span>
+                          <div class="translate">
+                             <span class="I_transl">Я</span> 
+                             <span class="speak_transl">говорю по </span> 
+                             <span class="english_transl">Английски</span>
+                          </div>
+                     </div>
+    
+                        <div class="word_test--one">
+    
+                        </div>
+                </div>
+                
+                  
+                  </div>
+                  
+
+
+                    <script>
+                        var word_one = document.getElementsByClassName('I')[0].onmouseenter = function() {
+                            var I = document.getElementsByClassName('I_transl')[0];
+                            I.style.background = 'yellow';
+                        }
+                        var word_one_out = document.getElementsByClassName('I')[0].onmouseout = function() {
+                            var I = document.getElementsByClassName('I_transl')[0];
+                            I.style.background = 'transparent';
+                        }
+
+                        var word_two = document.getElementsByClassName('speak')[0].onmouseenter = function() {
+                            var speak = document.getElementsByClassName('speak_transl')[0];
+                            speak.style.background='yellow';
+                        }
+
+                        var word_two = document.getElementsByClassName('speak')[0].onmouseout = function() {
+                            var speak = document.getElementsByClassName('speak_transl')[0];
+                            speak.style.background='transparent';
+                        }
+
+                        var word_three = document.getElementsByClassName('english')[0].onmouseenter = function() {
+                            var english = document.getElementsByClassName('english_transl')[0];
+                            english.style.background='yellow';
+                        }
+
+                        var word_three = document.getElementsByClassName('english')[0].onmouseout = function() {
+                            var english = document.getElementsByClassName('english_transl')[0];
+                            english.style.background='transparent';
+                        }
+                    </script>
+                    
+                 <div class="btns">
+                   <div class="btn_one">
+                      <button class="button">Запомнил!</button>
+                      <div class="complete">complete</div>
+                   </div>
+                 
+                   <div class="btn_two">
+                      <button class="button_two">Не запомнил</button>
+                      <div class="didn_t_remember">incomplete</div>
+                   </div>
+                 </div>
+                    
+
+                    <script>
+                        var scores = 0;
+                        var btn = document.getElementsByClassName('button')[0].onclick = function() {
+                            //style
+                            var cont = document.getElementsByClassName('complete')[0];
+                                cont.style.display='inline-block';
+                                cont.style.position='absolute';
+                                cont.style.backgroundColor='rgb(93, 204, 93)';
+                                cont.style.color='white';
+                                cont.style.padding='7.5px 40px';
+                                cont.style.marginLeft = '-274px';
+                            //style
+                            
+                            //=== code 
+                             setTimeout(l, 600);
+                             
+                            var result = scores;
+                       
+                            for(scores = 0; scores > 1; scores++) {
+                                scores++;
+                                console.log(scores);
+                            }
+                             console.log('scores: ', scores);
+                            
+                             function l() {
+                                cont.style.display='none';
+                            }
+                            var delicious = scores;
+
+                            //===
+                            
+                        }
+                        console.log(btn);
+                   
+                        var mistake = 0;
+                        var btn_two = document.getElementsByClassName('button_two')[0].onclick = function() {
+                            var cont_didnt = document.getElementsByClassName('didn_t_remember')[0];
+                             // style ====
+                                cont_didnt.style.display='inline-block';
+                                cont_didnt.style.position='absolute';
+                                cont_didnt.style.backgroundColor='rgb(255, 37, 37)';
+                                cont_didnt.style.color='white';
+                                cont_didnt.style.padding='7.5px 40px';
+                                cont_didnt.style.marginLeft = '-382px';
+                            //style === 
+                             setTimeout(l, 600);
+
+                            //  scores - 1;
+                             
+                             var result = scores - 1;
+
+                             
+                             console.error('scores: ', scores);
+                             
+                             function l() {
+                                cont_didnt.style.display='none';
+                            }              
+                            // var mistake = scores--;
+
+                            love; //function() {} 151 stroke
+
+                            console.log(love());
+                        }
+                        console.log(btn_two);
+
+                   
+                function love() {
+
+                 if(answer > 0){
+                    console.log('good' + answer);
+                 }
+                 else if (answer < 0) { 
+                    console.log('bad' + answer);
+                 }
+
+                 else {
+                    console.log('good ' + 'love'); // mistake ???
+                 }
+
+                 function answer() {
+                        if(scores > mistake) {
+                            console.log('very good');
+                        }
+
+                        else if(scores--) {
+                            console.log('bad--');
+                            
+                        }
+
+                        else if(scores < mistake) {
+                            console.log('scores < mistake');
+                        }
+
+                        else {
+                            console.log('else');
+                        }
+                    }
+                    console.log(answer());
+                }
+
+                  
+
+
+                       
+                        
+                    </script>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer_container">
+                   <div class="logo">logo</div>
+                   <div class="info">bars</div>
+                 </div>
+            </footer>
+    </body>
+</html>
+
+
+
+
+
+
+<!-- -->
+
+
+
+
+// style
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: gold;
+}
+
+header > .headline {
+    width: 100%;
+    box-shadow: 1px 10px 13px 0 color(srgb 1 0.8402 0.005);
+}
+
+.headline > .header_in {
+    width: 100%;
+    max-width: 960px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 0 27px;
+}
+
+.header_in > .logo {
+    font-size: 25px;
+}
+
+.header_in > .bars {
+    font-size: 25px;
+}
+/**/
+
+.main_container {
+    width: 100%;
+}
+
+.main_container > .container_in {
+    width: 100%;
+    max-width: 960px;
+    margin:40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main_container > .container_in > .container_t {
+    width: 100%;
+    max-width: 960px;
+    margin:40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_in > .btns  {
+    width: 24%;
+    display: inline-block;
+}
+.container_in > .container_t > .item  {
+    display: inline-block;
+}
+
+.container_in > .container_t > .item > .word {
+    display: inline-block;
+}
+.word > .exspr_one {
+    display: inline-block;
+}
+
+.word > .translate {
+    display: inline-block;
+}
+
+.exspr_one > .item > .word > .I {
+    padding: 2px;
+    /* position: absolute; */
+}
+
+.exspr_one > .item > .word > .I:hover {
+    padding: 2px;
+}
+
+.exspr_one > .item > .word > .speak {
+    padding: 2px;
+}
+
+.exspr_one > .item > .word > .english {
+    padding: 2px;
+}
+
+.container_in > .container_t > .btns {
+    display: flex;
+    align-items: center;
+}
+
+.btns > .btn_one {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btns > .btn_one > .button {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn_one > .complete {
+    display: none;
+}
+
+.btn_two {
+    display: inline-block;
+}
+
+.btn_two > .button_two {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+.btn_two > .didn_t_remember {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+/**/
+footer {
+    width: 100%;
+    background-color: gold;
+}
+
+footer > .footer_container {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+/**/
+</style>
+
+
+
+
+<script> 
+
+ var scores = 0;
+                        var btn = document.getElementsByClassName('button')[0].onclick = function() {
+                            //style
+                            var cont = document.getElementsByClassName('complete')[0];
+                                cont.style.display='inline-block';
+                                cont.style.position='absolute';
+                                cont.style.backgroundColor='rgb(93, 204, 93)';
+                                cont.style.color='white';
+                                cont.style.padding='7.5px 40px';
+                                cont.style.marginLeft = '-274px';
+                            //style
+                            
+                            //=== code 
+                             setTimeout(l, 600);
+                             
+                            var result = scores;
+                       
+                            for(scores = 0; scores > 1; scores++) {
+                                scores++;
+                                console.log(scores);
+                            }
+                             console.log('scores: ', scores);
+                            
+                             function l() {
+                                cont.style.display='none';
+                            }
+                            var delicious = scores;
+
+                            //===
+                            
+                        }
+                        console.log(btn);
+                   
+                        var mistake = 0;
+                        var btn_two = document.getElementsByClassName('button_two')[0].onclick = function() {
+                            var cont_didnt = document.getElementsByClassName('didn_t_remember')[0];
+                             // style ====
+                                cont_didnt.style.display='inline-block';
+                                cont_didnt.style.position='absolute';
+                                cont_didnt.style.backgroundColor='rgb(255, 37, 37)';
+                                cont_didnt.style.color='white';
+                                cont_didnt.style.padding='7.5px 40px';
+                                cont_didnt.style.marginLeft = '-382px';
+                            //style === 
+                             setTimeout(l, 600);
+
+                            //  scores - 1;
+                             
+                             var result = scores - 1;
+
+                             
+                             console.error('scores: ', scores);
+                             
+                             function l() {
+                                cont_didnt.style.display='none';
+                            }              
+                            // var mistake = scores--;
+
+                            love; //function() {} 151 stroke
+
+                            console.log(love());
+                        }
+                        
+                        console.log(btn_two);
+
+                   
+                function love() {
+
+                 if(answer > 0){
+                    console.log('good' + answer);
+                 }
+                 else if (answer < 0) { 
+                    console.log('bad' + answer);
+                 }
+
+                 else {
+                    console.log('good ' + 'love'); // mistake ???
+                 }
+
+                 function answer() {
+                        if(scores > mistake) {
+                            console.log('very good');
+                        }
+
+                        else if(scores--) {
+                            console.log('bad--');
+                            
+                        }
+
+                        else if(scores < mistake) {
+                            console.log('scores < mistake');
+                        }
+
+                        else {
+                            console.log('else');
+                        }
+                    }
+                    console.log(answer());
+                }
+
+
+
+
+
+
+
+
+</script>
